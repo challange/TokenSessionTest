@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: test
+  profiles:
+    active: peer
+  session:
+    store-type: redis
+  redis:
+    namespace: spring:session
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+
+server:
+  port: 8011
